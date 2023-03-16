@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>４択クイズ</title>
+
+  
+  <link rel="stylesheet" type= "text/css" href="main.css">
+</head>
+<body>
+  <div id="wrapper">
+<main class="quiz">
+  <div class="inner-block">
+ 
+    <div class="quiz-content">
+ 
+      <div class="finish">
+        <div class="score-wrap">
+          <span class="score">0</span>
+          <span class="ja">点</span>
+          <span class="full">／100点</span>
+        </div>
+        <a href="main.html" class="goback-button">最初からやり直す</a>
+      </div>
+ 
+      <div class="quiz-question-number"></div>
+      <h2 class="quiz-question"></h2>
+ 
+      <ul class="quiz-answer">
+        <li>
+        <label class="quiz-button button01">
+          <input name="radio" type="radio" value="">
+          <span class="quiz-text01"></span>
+        </label>
+        </li>
+        <li>
+          <label class="quiz-button button02">
+            <input name="radio" type="radio" value="">
+            <span class="quiz-text02"></span>
+          </label>
+        </li>
+        <li>
+          <label class="quiz-button button03">
+            <input name="radio" type="radio" value="">
+            <span class="quiz-text03"></span>
+          </label>
+        </li>
+        <li>
+          <label class="quiz-button button04">
+            <input name="radio" type="radio" value="">
+            <span class="quiz-text04"></span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+ <!-- /wrapper -->
+
+  <script src="jquery-3.6.1.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
