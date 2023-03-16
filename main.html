@@ -6,60 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>４択クイズ</title>
 
-  
-  <link rel="stylesheet" type= "text/css" href="main.css">
+  <link rel="stylesheet" type= "text/css" href="top.css">
 </head>
 <body>
-  <div id="wrapper">
-<main class="quiz">
-  <div class="inner-block">
- 
-    <div class="quiz-content">
- 
-      <div class="finish">
-        <div class="score-wrap">
-          <span class="score">0</span>
-          <span class="ja">点</span>
-          <span class="full">／100点</span>
-        </div>
-        <a href="main.html" class="goback-button">最初からやり直す</a>
-      </div>
- 
-      <div class="quiz-question-number"></div>
-      <h2 class="quiz-question"></h2>
- 
-      <ul class="quiz-answer">
-        <li>
-        <label class="quiz-button button01">
-          <input name="radio" type="radio" value="">
-          <span class="quiz-text01"></span>
-        </label>
-        </li>
-        <li>
-          <label class="quiz-button button02">
-            <input name="radio" type="radio" value="">
-            <span class="quiz-text02"></span>
-          </label>
-        </li>
-        <li>
-          <label class="quiz-button button03">
-            <input name="radio" type="radio" value="">
-            <span class="quiz-text03"></span>
-          </label>
-        </li>
-        <li>
-          <label class="quiz-button button04">
-            <input name="radio" type="radio" value="">
-            <span class="quiz-text04"></span>
-          </label>
-        </li>
-      </ul>
+  <section class="main">
+    <div class="title-wrapper">
+      <h1>4択クイズ</h1>
+      <p id="desc">
+        ここはゲームや体験を通してサイバー犯罪に関する学習ができる場所！<br>
+        まずは、自分に合った問題を解いて見よう！<br>
+    </p>
     </div>
-  </div>
-</main>
- <!-- /wrapper -->
 
-  <script src="jquery-3.6.1.min.js"></script>
-  <script src="main.js"></script>
+
+<div class="boxes_container">
+<!-- 小学生向けコンテンツ -->
+  <div class="box">
+    <h3>小学生向け
+      <img class="img" src="eleboy.png">
+    </h3>
+    <a href="element_question.html" class="btn">挑戦</a>
+  </div>
+
+  <!-- 中学生向けコンテンツ -->
+  <div class="box">
+    <h3>中学生向け
+      <img class="img" src="juboy.png">
+    </h3>
+    <a href="junior_question.html" class="btn">挑戦</a>
+  </div>
+
+    <div class="box">
+      <h3>高校生向け
+        <img class="img" src="hiboy.png">
+      </h3>
+      <a href="high_question.html" class="btn">挑戦</a>
+    </div>
+</div>
+
 </body>
 </html>
